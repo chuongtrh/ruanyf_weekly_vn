@@ -20,7 +20,7 @@ Tuần trước, Lou Ottens - kỹ sư người Hà Lan của hãng Philips, ng�
 
 Điều này gợi lại trong tôi những kỷ niệm cũ. Nhiều độc giả trẻ tuổi ở đây có thể chưa từng biết tới chiếc băng cassette, nhưng hơn 20 năm trước, đó gần như là phương tiện duy nhất giúp chúng tôi tiếp cận và lắng nghe âm nhạc đại chúng.
 
-Thời đó, để nghe đi nghe lại các ca khúc phát trên kênh âm nhạc của đài phát thanh, người ta bắt buộc phải dùng băng cassette để ghi âm lại, hoặc gom tiền mua băng nhạc album chính hãng của ca sĩ. Tôi nhớ thời kỳ đầu một hộp băng có giá khoảng 7 tệ, sau đó tăng lên 10 tệ. Đó là số tiền khá lớn đối với học sinh thời ấy, phải đắn đo suy nghĩ rất lâu mới dám mua và sau đó nghe đi nghe lại hàng trăm lần đến mức mòn cả sợi băng.
+Thời đó, để nghe đi nghe lại các ca khúc phát trên đài phát thanh, người ta bắt buộc phải dùng băng cassette để ghi âm lại, hoặc gom tiền mua băng nhạc album chính hãng của ca sĩ. Tôi nhớ thời kỳ đầu một hộp băng có giá khoảng 7 tệ, sau đó tăng lên 10 tệ. Đó là số tiền khá lớn đối với học sinh thời ấy, phải đắn đo suy nghĩ rất lâu mới dám mua và sau đó nghe đi nghe lại hàng trăm lần đến mức mòn cả sợi băng.
 
 ![](https://cdn.beekka.com/blogimg/asset/202103/bg2021031606.jpg)
 
@@ -208,7 +208,7 @@ Một file đồ họa vector định dạng SVG tích hợp sẵn script JS cho
 
 ![](https://cdn.beekka.com/blogimg/asset/202102/bg202102506.jpg)
 
-Trình soạn thảo văn bản Markdown mã nguồn mở chạy native trên Windows và Linux hỗ trợ giao diện简洁 (sạch sẽ) giúp người viết tập trung cao độ vào nội dung.
+Trình soạn thảo văn bản Markdown mã nguồn mở chạy native trên Windows và Linux hỗ trợ giao diện sạch sẽ giúp người viết tập trung cao độ vào nội dung.
 
 7、[Image Renamer](https://github.com/Arman19941113/image-renamer)
 
@@ -266,7 +266,7 @@ Bức ảnh hình nền mặc định "Bliss" (Hạnh phúc) của hệ điều 
 
 ![](https://cdn.beekka.com/blogimg/asset/202102/bg2021022708.jpg)
 
-Nhiếp ảnh gia Charles O'Rear (khi đó 56 tuổi), một cựu phóng viên ảnh của tờ *Los Angeles Times* và có 25 năm chụp ảnh cho tạp chí *National Geographic*, đã chụp lại khoảnh khắc này vào một chiều thứ Sáu năm 1996 khi đang lái xe qua khu vực. Ông đăng bán ảnh trên kho ảnh ảnh stock, sau đó hãng Microsoft phát hiện và quyết định mua đứt vĩnh viễn bức ảnh (giá mua được cho là lên tới hàng trăm ngàn USD) làm hình nền mặc định cho Windows XP.
+Nhiếp ảnh gia Charles O'Rear (khi đó 56 tuổi), một cựu phóng viên ảnh của tờ *Los Angeles Times* và có 25 năm chụp ảnh cho tạp chí *National Geographic*, đã chụp lại khoảnh khắc này vào một chiều thứ Sáu năm 1996 khi đang lái xe qua khu vực. Ông đăng bán ảnh trên kho ảnh stock, sau đó hãng Microsoft phát hiện và quyết định mua đứt vĩnh viễn bức ảnh (giá mua được cho là lên tới hàng trăm ngàn USD) làm hình nền mặc định cho Windows XP.
 
 Nhiều người dùng lúc bấy giờ luôn cho rằng bức ảnh được vẽ bằng máy tính hoặc được chụp tại một thung lũng ở châu Âu chứ không biết nó nằm ngay gần thung lũng Silicon. Đáng tiếc là chỉ vài năm sau khi chụp ảnh, ngọn đồi đã được cày xới trồng nho và lắp ráp hàng loạt giàn leo khiến bãi cỏ xanh mướt năm xưa không bao giờ có thể phục hiện lại được nữa:
 
@@ -325,6 +325,23 @@ Sự bùng nổ của mạng Internet đã đẩy lượng phát hành báo in t
 Các ứng dụng nhắn tin bảo mật hiện nay (Signal, Telegram, WhatsApp...) đều có một điểm chung hạn chế: Chúng là những "khu vườn khép kín" (walled gardens). Người dùng chỉ có thể gửi tin nhắn cho những người cùng cài đặt ứng dụng đó. Điều này tương tự như việc người dùng Gmail chỉ có thể gửi thư điện tử cho người dùng Gmail khác vậy - một cơ chế thiếu tương tác mở nghiêm trọng.
 
 -- Trích bài viết về ứng dụng nhắn tin
+
+5、
+
+Khoảng 10 năm trước, một nhóm các kỹ sư vận hành có nhiều ý kiến trái chiều với các nhà phát triển. Họ cho rằng các nhà phát triển không quan tâm đến việc mã nguồn của họ có chạy ổn định trên thực tế hay không, chỉ giao sản phẩm xong là hết trách nhiệm. Đồng thời, kỹ sư vận hành cũng cảm thấy bị bóc lột sức lao động khi ban quản lý yêu cầu trực chiến 24/7 nhưng hầu như không hỗ trợ hay công nhận thành quả xứng đáng. Những kỹ sư này đã châm ngòi cho cuộc cách mạng DevOps thúc đẩy sự hợp tác chặt chẽ giữa DEV và OPS để vận hành các hệ thống phần mềm phức tạp trên Internet.
+
+-- Lịch sử truyền miệng về DevOps
+
+6、
+
+Bạn có thể tin được không, điện thoại thông minh chính thức xuất hiện trên thế giới đến nay còn chưa đầy 5.000 ngày. So với lịch sử loài người, 5.000 ngày là quá ngắn ngủi. Thế nhưng chỉ trong thời gian ngắn ngủi ấy, thói quen và cách thức sinh hoạt của cả thế giới đã thay đổi một cách kinh ngạc.
+
+-- Kevin Kelly
+
+## 历史上的本周
+
+- 2020年（第 99 期）：[Tác động của việc tuyển sinh thạc sĩ mở rộng do dịch bệnh](http://www.ruanyifeng.com/blog/2020/03/weekly-issue-99.html)
+- 2019年（第 47 期）：[Nghề ăn uống phát trực tiếp (Mukbang) có được coi là một công việc chính thức?](http://www.ruanyifeng.com/blog/2019/03/weekly-issue-47.html)
 
 ## 订阅
 
