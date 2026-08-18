@@ -60,9 +60,9 @@ Các hãng xe taxi tại Vũ Hán hiện đã rơi vào tình cảnh kiệt qu�
 
 "Hiện tại, thu nhập gộp hàng ngày của mỗi tài xế trong công ty chúng tôi chỉ dao động từ 200 đến 300 tệ, thực sự là muối bỏ bể, không thể duy trì cuộc sống.
 
-由此引发驾驶员与公司之间的矛盾，司机群里每天抱怨公司和管理部门不作为。
+Từ đó dẫn đến mâu thuẫn giữa tài xế và công ty, các nhóm tài xế hàng ngày đều phàn nàn về việc công ty và các bộ phận quản lý không có hành động gì.
 
-特别是在这一段无人驾驶网络车的流行，**科技垄断资源，抢夺底层人的饭碗**，许多巡游出租车养家糊口困难，被逼退出这个行业。"
+Đặc biệt là sự thịnh hành gần đây của xe tự lái công nghệ, **công nghệ độc quyền tài nguyên, cướp đi bát cơm của người lao động bình dân**, khiến nhiều xe taxi truyền thống gặp khó khăn trong việc nuôi sống gia đình, buộc phải rút lui khỏi ngành này."
 
 Thất nghiệp là một vấn đề xã hội vô cùng nghiêm trọng. Nếu xe taxi tự lái thay thế tài xế con người trên quy mô lớn, sinh kế của rất nhiều gia đình sẽ bị lung lay. Để đảm bảo ổn định xã hội, **chính phủ cần phải áp đặt các biện pháp kiểm soát và hạn chế đối với dịch vụ xe tự lái**.
 
