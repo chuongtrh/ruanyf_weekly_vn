@@ -8,6 +8,11 @@ Chào mừng đóng góp bài viết/phần mềm/tài nguyên, vui lòng [gửi
 
 ## 2026
 
+**Tháng 8**
+
+- Số 408: [Những điều bạn cần biết về bộ nhớ đệm AI (AI Cache)](docs/issue-408.md)
+- Số 407: [Tại sao một quốc gia cần phần mềm mã nguồn mở?](docs/issue-407.md)
+
 **Tháng 7**
 
 - Số 406: [Đạo khả đạo, phi thường đạo](docs/issue-406.md)
