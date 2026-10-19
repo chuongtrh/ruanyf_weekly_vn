@@ -1,70 +1,106 @@
-# Tuần san công nghệ số 413: Tạm biệt React Native
+# Tuần san #413: Tạm biệt React Native
 
 > **Tên gốc:** 科技爱好者周刊（第 413 期）：再见了，React Native  
-> **Tác giả:** 阮一峰 (Ruan Yifeng)  
-> **Phát hành:** 18/09/2026  
-> **Tổng hợp bổ sung:** 19/10/2026  
-> **Nguồn chính:** [Bài gốc số 413](https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html)  
-> **Phân loại:** Tổng hợp và bình luận bằng tiếng Việt; không phải bản dịch nguyên văn.
+> **Tác giả:** 阮一峰 · **Ngày:** 18/09/2026 · **Tổng hợp:** 19/10/2026  
+> **Nguồn:** https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html  
+> **Hình thức:** Ghi chú đọc và phân tích bằng tiếng Việt, không phải bản dịch nguyên văn.
 
 ## Mục lục
 
-1. [Tổng quan](#tong-quan)
-2. [Phân tích chủ đề chính](#phan-tich-chu-de-chinh)
-3. [Ba góc nhìn cần ghi nhớ](#ba-goc-nhin-can-ghi-nho)
-4. [Tin tức, bài viết và công cụ được giới thiệu](#tin-tuc-bai-viet-va-cong-cu-duoc-gioi-thieu)
-5. [Ý nghĩa đối với AI và kỹ thuật phần mềm](#y-nghia-doi-voi-ai-va-ky-thuat-phan-mem)
-6. [Bài học thực dụng và kết luận](#bai-hoc-thuc-dung-va-ket-luan)
+1. Tổng quan
+2. Vì sao Shopify rời React Native?
+3. Bản đồ Mercator và Equal Earth
+4. Tin công nghệ, bài đọc và công cụ
+5. Tài nguyên, hình ảnh và câu nói
+6. Góc nhìn AI và kết luận
 
-## Tổng quan
+## 1. Tổng quan
 
-Kỳ 413 mang chủ đề **Tạm biệt React Native**, đặt vấn đề về mối quan hệ giữa công nghệ, tổ chức, kinh tế và việc sử dụng AI trong đời thực. Phần dưới đây diễn giải ý chính của tuần san, rồi bổ sung góc nhìn kỹ thuật thực dụng; các suy luận bổ sung được tách rõ khỏi thông tin nguồn.
+Chủ đề trung tâm là quyết định của Shopify chuyển ứng dụng di động từ React Native trở về Swift và Kotlin. Tác giả dùng ví dụ này để lập luận rằng AI làm chi phí viết lại mã giữa các nền tảng giảm, từ đó thay đổi lợi ích của một số lớp trừu tượng. Chủ đề thứ hai là cách phép chiếu bản đồ ảnh hưởng đến cách nhìn về diện tích các quốc gia. Các mục khác giới thiệu công cụ terminal, video, cộng tác, tài nguyên thiết kế và những nhận định về mã do AI tạo.
 
-## Phân tích chủ đề chính
+## 2. Shopify và câu hỏi: còn cần framework đa nền tảng không?
 
-### 1. Bối cảnh và luận điểm
+Năm 2020, Shopify từng tuyên bố chuyển mạnh sang React Native. Khi đó ba lợi ích được quảng bá là tránh làm cùng tính năng hai lần, cho phép kỹ sư linh hoạt giữa các nhóm và dành thời gian tiết kiệm được cho giá trị mới. Đằng sau đó còn có yếu tố kinh tế: duy trì một nền tảng phát triển chung có thể giảm nhân sự và công sức đồng bộ giữa iOS và Android.
 
-Tuần san nêu việc Shopify chuyển từ React Native sang phát triển ứng dụng bản địa bằng Swift và Kotlin, trái với lựa chọn của hãng năm 2020. Lập luận tác giả: AI làm chi phí tạo và đồng bộ hai mã nguồn giảm, từ đó giảm một lợi thế kinh tế của nền tảng đa hệ điều hành.
+Trong [thông báo mới](https://shopify.engineering/back-to-native), Shopify chọn trở lại phát triển bản địa bằng Swift và Kotlin. Theo diễn giải của Ruan Yifeng, coding agent làm việc chuyển đổi logic giữa hai ngôn ngữ rẻ hơn, khiến chi phí duy trì hai codebase không còn cao như trước. Nếu vậy, doanh nghiệp có thể ưu tiên hiệu năng, khả năng tích hợp hệ điều hành và trải nghiệm native thay vì tối ưu lượng mã viết tay.
 
-### 2. Cơ chế, nguyên nhân và hệ quả
+**Cần phân biệt ý kiến và dữ kiện:** quyết định của một công ty không có nghĩa React Native đã hết giá trị trong mọi sản phẩm. Framework đa nền tảng không chỉ giảm số dòng mã: nó còn chia sẻ thành phần UI, mô hình lập trình, thư viện, nhân lực và cách tổ chức nhóm. AI có thể dịch logic, nhưng khác biệt về API nền tảng, accessibility, vòng đời ứng dụng, build, signing và release vẫn phải được xử lý.
 
-Cần đọc nhận định này có điều kiện. React Native không chỉ giúp viết ít mã mà còn mang mô hình thành phần, thư viện, cộng đồng và cách tổ chức đội. AI có thể dịch logic nhưng không làm biến mất khác biệt về vòng đời ứng dụng, quyền, hiệu năng hay công cụ triển khai giữa Android và iOS.
+Để quyết định có chuyển hay không, cần đo: thời gian phát triển tính năng trên hai nền tảng; hiệu năng startup, scroll, animation; lỗi crash; chi phí tuyển dụng và bảo trì; khả năng kiểm thử đồng nhất. Việc AI viết mã nhanh hơn chỉ làm thay đổi một phần của phương trình tổng chi phí sở hữu.
 
-### 3. Giới hạn và điều cần kiểm chứng
+## 3. Equal Earth: vì sao bản đồ quen thuộc có thể đánh lừa mắt?
 
-Kỳ này còn bàn về phép chiếu bản đồ Equal Earth và sai lệch diện tích của Mercator; cùng trích đoạn 'slop lasagna' — mã có thể xấu trong từng thành phần nhưng ranh giới tốt giúp chúng được thay thế độc lập. Đó là thuộc tính ngày càng có giá trị khi AI có thể viết lại một module nhanh.
+Trái Đất gần hình cầu, còn bản đồ là mặt phẳng. Mọi phép chiếu đều phải đánh đổi một số thuộc tính: hình dạng, diện tích, góc hoặc khoảng cách. Mercator rất hữu ích trong hàng hải vì bảo toàn góc cục bộ, nhưng làm phóng đại diện tích vùng vĩ độ cao. Greenland hay các nước phía bắc trông lớn hơn tương quan thực tế.
 
-## Ba góc nhìn cần ghi nhớ
+Tuần san bàn đến phép chiếu Equal Earth, được thiết kế để thể hiện diện tích tương đối tốt hơn và tạo hình dáng thế giới dễ nhìn. Ý nghĩa không chỉ là kỹ thuật bản đồ: lựa chọn cách trực quan hóa ảnh hưởng tới trực giác chính trị và địa lý của người xem.
 
-1. **AI giảm giá trị của một số lớp tránh viết mã lặp.** Hãy phân biệt đặc điểm dễ quan sát với nguyên nhân sâu xa, tránh đánh giá chỉ qua quảng bá hoặc ví dụ nổi bật.
+Bài có nhắc thông tin về một cuộc bỏ phiếu liên quan đến việc từ bỏ Mercator; không nên hiểu là tất cả bản đồ Mercator bị cấm. Từng mục đích vẫn cần phép chiếu phù hợp: hàng hải, địa lý học, bản đồ web và thống kê dân số có tiêu chí khác nhau.
 
-2. **Trừu tượng tốt vẫn cần để kiểm soát phức tạp.** Một hướng phát triển chỉ thực sự có giá trị nếu giảm độ phức tạp, rủi ro hoặc chi phí tổng thể trong hoàn cảnh sử dụng xác định.
+## 4. Sáu bài đọc
 
-3. **Ranh giới kiến trúc quan trọng hơn vẻ đẹp từng hàm.** Phải kiểm tra tác động sau triển khai bằng chỉ số đầu ra và các tình huống thực tế, không chỉ tin mô tả từ mô hình hay nhà cung cấp.
+1. **[Mẫu HTML cá nhân](https://vale.rocks/posts/html-boilerplate)** — Một bộ khung HTML tự xây giúp tác giả hiểu cấu trúc mặc định và tránh lệ thuộc quá nhiều vào boilerplate sinh sẵn.
 
-## Tin tức, bài viết và công cụ được giới thiệu
+2. **[Lướt web khi không có CSS](https://css-tricks.com/that-time-i-tried-browsing-the-web-without-css/)** — Thử nghiệm tắt stylesheet để thấy vai trò của HTML ngữ nghĩa và khả năng truy cập.
 
-Kỳ này còn có các mục tin tức, bài đọc, công cụ, tài nguyên và trích đoạn được tác giả chọn lọc. Để giữ nguồn chính xác khi lưu trữ, các danh sách và liên kết gốc được dẫn trực tiếp dưới đây thay vì tự gán tên hoặc thông số cho công cụ chưa đối chiếu riêng:
+3. **[Công cụ quản lý container và reverse proxy](https://web.archive.org/web/20250401115923/https://kiranet.org/posts/self-hosting-like-its-2025/)** — Giới thiệu các công cụ giúp tự lưu trữ dịch vụ với cấu hình container và proxy.
 
-- [Tin công nghệ trong bản gốc](https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html#科技动态) — theo dõi các sản phẩm, nghiên cứu và thử nghiệm được giới thiệu trong tuần.
-- [Bài viết được giới thiệu](https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html#文章) — nguồn đọc sâu thêm, gồm các bài kỹ thuật và phân tích.
-- [Công cụ và dự án](https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html#工具) — nên kiểm tra giấy phép, mức độ trưởng thành, nền tảng hỗ trợ và tình trạng bảo trì trước khi dùng thật.
-- [Tài nguyên học tập](https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html#资源) và [các trích đoạn](https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html#言论) — tiếp cận nguồn gốc trước khi trích dẫn nguyên văn.
+4. **[Những điểm kỳ lạ của JavaScript](https://stack-auth.com/blog/on-javascripts-weirdness)** — Các hành vi không trực giác của ngôn ngữ nhắc lập trình viên chú ý chuyển kiểu và quy tắc runtime.
 
-**Cách đọc chọn lọc:** Với công cụ mới, cần thử trên dữ liệu giả, kiểm tra quyền truy cập, tiêu thụ tài nguyên, độ ổn định và quy trình phục hồi. Với bài viết quan điểm, nên tách luận cứ, số liệu và diễn giải của người viết.
+5. **[Tham số udm của Google Search](https://serpapi.com/blog/every-google-udm-in-the-world/)** — Tìm hiểu các biến thể giao diện và bộ lọc tìm kiếm được kích hoạt bằng tham số URL.
 
-## Ý nghĩa đối với AI và kỹ thuật phần mềm
+6. **[Giải thích entropy bằng ví dụ](https://www.engineersedge.com/thermodynamics/entropy_explained_with_sheep_15961.htm)** — Bài diễn giải khái niệm entropy trong nhiệt động lực học theo cách trực quan.
 
-AI đang làm rẻ nhiều thao tác tạo đầu ra nhưng đồng thời gia tăng yêu cầu kiểm chứng. Phần mềm đáng tin cần ba tầng: **ý định/đặc tả**, **triển khai** và **xác minh độc lập**. Một mô hình tạo mã hoặc đưa ra điểm đánh giá không tự chứng minh kết quả chính xác. Cần công cụ đo, kiểm thử, kiểm tra giới hạn và trách nhiệm con người ở bước quan trọng.
+**Góc nhìn chung:** các bài trải từ HTML/CSS và JavaScript đến hạ tầng self-host và kiến thức nền. Chúng nhắc rằng AI có thể tạo giao diện nhanh nhưng người phát triển vẫn cần hiểu HTML ngữ nghĩa, các hành vi runtime và giao thức hạ tầng để kiểm tra đầu ra.
 
-Đối với những bài toán có nhiều lựa chọn kỹ thuật, tiêu chí đúng không chỉ là 'AI làm được hay không', mà còn là **chi phí vận hành, khả năng giải thích, tác động tới người dùng, khả năng thay thế và sự phù hợp với ràng buộc thực tế**.
+## 5. Mười công cụ
 
-## Bài học thực dụng và kết luận
+1. **[Great Tables](https://github.com/posit-dev/great-tables)** — Tạo bảng trình bày đẹp từ dữ liệu, phục vụ báo cáo.
 
-Đánh giá lại các trừu tượng theo hai tiêu chí: chúng giảm công gõ mã hay thật sự giảm độ phức tạp nhận thức/vận hành? Ưu tiên ranh giới thành phần, hợp đồng rõ và bài kiểm thử độc lập.
+2. **[ghostty-web](https://github.com/coder/ghostty-web)** — Thành phần terminal trên web dựa trên công nghệ của Ghostty.
 
-**Kết luận:** Kỳ 413 là một lời nhắc rằng đổi mới công nghệ có giá trị khi nó giúp giải quyết đúng vấn đề và tạo ra kết quả có thể kiểm chứng. Cần tách kỳ vọng, nhận định của tác giả và dữ kiện đã xác nhận; lựa chọn giải pháp theo hoàn cảnh thay vì theo xu hướng ngắn hạn.
+3. **[Infat](https://github.com/philocalyst/infat)** — Công cụ được giới thiệu trong tuần san; cần xem tài liệu dự án để đánh giá chi tiết.
+
+4. **[mini-img-editor](https://github.com/xdadda/mini-photo-editor)** — Chỉnh sửa ảnh gọn nhẹ.
+
+5. **[CryptPad](https://cryptpad.fr/)** — Bộ công cụ cộng tác trực tuyến tập trung vào bảo mật và mã hóa.
+
+6. **[Lyrimuse](https://github.com/Yudaotor/lyrimuse)** — Công cụ âm nhạc/lời bài hát.
+
+7. **[capcut-cli](https://github.com/renezander030/capcut-cli)** — Điều khiển các tác vụ biên tập video CapCut qua dòng lệnh.
+
+8. **[mailez](https://github.com/mailez-hq/mailez)** — Công cụ hỗ trợ workflow email.
+
+9. **[Status Trio](https://github.com/lingyired/status-trio)** — Hiển thị hoặc theo dõi trạng thái hệ thống.
+
+10. **[Polycompiler](https://github.com/EvanZhouDev/polycompiler)** — Thử nghiệm liên quan đến biên dịch/chuyển đổi nhiều ngôn ngữ.
+
+**Đánh giá thực dụng:** ghostty-web phù hợp nếu xây terminal trong trình duyệt; capcut-cli đáng chú ý cho pipeline tạo video; CryptPad hữu ích khi cộng tác với dữ liệu nhạy cảm. Với các dự án nhỏ hoặc mới, nên kiểm tra lịch sử commit, giấy phép và tình trạng duy trì thay vì suy đoán độ trưởng thành từ ảnh demo.
+
+## 6. Bốn tài nguyên
+
+1. **[gpcb.net](https://gpcb.net/net/)** — Tài nguyên trực tuyến về mạng máy tính.
+
+2. **[Từ điển phong cách thị giác](https://visualstyles.jerrymakes.com/)** — Kho tham khảo phong cách thiết kế hình ảnh.
+
+3. **[Kiểm tra IP cho AI](https://store.xiu.ai/zh/ai-ip/)** — Công cụ đánh giá IP/địa chỉ mạng cho truy cập dịch vụ AI.
+
+4. **[Gravity](https://qunabu.github.io/Gravity/#what-is-gravity)** — Trang trực quan hóa kiến thức về trọng lực.
+
+## 7. Hình ảnh và câu nói đáng nhớ
+
+Tuần san có những hình ảnh và nhận xét về cách công nghệ định hình cách chúng ta nhìn thế giới. Các trích đoạn bàn về hiện tượng “slop lasagna”: mã bên trong từng module có thể không đẹp, nhưng nếu các module có ranh giới và hợp đồng rõ, hệ thống vẫn có thể thay thế từng phần tương đối dễ dàng. Đây là một nhận xét có giá trị trong thời AI sinh mã.
+
+Một ý tưởng khác là hình ảnh “thời đại của các phù thủy”: con người dùng hệ thống mạnh mà không hiểu hết bên trong, nên phải dựa nhiều hơn vào thực nghiệm và kiểm chứng. Cách diễn giải này không nên hiểu rằng kiến thức kỹ thuật không còn cần thiết; trái lại, cần hiểu đủ để biết nên kiểm tra điều gì.
+
+## 8. AI thay đổi giá trị của lớp trừu tượng ra sao?
+
+Trước AI, một framework thường mang giá trị rõ ràng vì tiết kiệm công viết mã. Khi AI giảm chi phí sinh mã, giá trị ấy có thể giảm tương đối. Nhưng những trừu tượng thật sự có ích còn giúp giảm độ phức tạp nhận thức, quản lý trạng thái, giảm khác biệt nền tảng và duy trì tiêu chuẩn chất lượng. Chúng không biến mất chỉ vì mã rẻ hơn.
+
+Ví dụ trong một ứng dụng Go, AI có thể viết CRUD rất nhanh; điều đó không làm cho ranh giới transaction, kiểm soát truy cập, schema migration và quan sát lỗi trở nên vô nghĩa. Những thứ khó vẫn là tính đúng, nhất quán và khả năng vận hành.
+
+**Ba hành động sau khi đọc:** (1) đánh giá framework theo chi phí vận hành thay vì số dòng mã; (2) đặt contract và test quanh module để AI có thể sửa từng phần an toàn; (3) đo hiệu năng và trải nghiệm trên thiết bị thực trước khi quyết định viết lại.
+
+**Kết luận:** React Native là ví dụ để thảo luận một thay đổi kinh tế sâu hơn: AI làm việc chuyển đổi mã rẻ đi, nhưng không xóa chi phí phối hợp và trách nhiệm kỹ thuật. Một kiến trúc tốt phải tiếp tục chứng minh giá trị ở những thứ khó kiểm chứng và khó thay thế.
 
 ---
-
-*Ghi chú lưu trữ: Đây là bản tổng hợp có bình luận; độc giả muốn kiểm tra các công cụ, tin nhỏ, hình ảnh và câu trích dẫn nên theo [bài gốc](https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html). Không tái bản nguyên văn tác phẩm của tác giả.*
+*Đối chiếu: [Markdown gốc #413](https://github.com/ruanyf/weekly/blob/master/docs/issue-413.md).*
