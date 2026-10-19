@@ -1,4 +1,17 @@
-# Bản tin công nghệ hàng tuần (Technology Enthusiast Weekly)
+# Tuần san công nghệ 阮一峰 – tiếng Việt
+
+Kho có hai mục nội dung khác nhau:
+
+- **[Tổng hợp chi tiết](tong-hop/README.md):** Ghi chú đọc, phân tích, công cụ, liên kết và bài học ứng dụng; mỗi số lưu tại `tong-hop/issue-NNN.md`.
+- **[Bản dịch](dich/README.md):** Bản dịch tiếng Việt; các bản dịch trước đây vẫn được giữ tại `docs/`, không thay đổi liên kết cũ.
+
+**Mới nhất:** [Tổng hợp số 415 – Phiên bản 3D của “Những thành phố vô hình”](tong-hop/issue-415.md), phát hành 16/10/2026.
+
+**Lịch xuất bản bản tổng hợp:** 8:00 thứ Hai hằng tuần, giờ Việt Nam, khi có số mới; không tạo commit trùng. Tệp Markdown dùng để lưu trữ, còn bản hiển thị trong ChatGPT được trình bày để dễ đọc.
+
+---
+
+## Chỉ mục bản dịch hiện có (đường dẫn cũ)
 
 Ghi lại những nội dung công nghệ đáng chia sẻ hàng tuần, phát hành vào thứ Sáu.
 
