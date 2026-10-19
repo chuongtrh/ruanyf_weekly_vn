@@ -23,6 +23,6 @@ Bản ghi chú đọc, diễn giải và bình luận từ tuần san công ngh�
 | 401 | 26/06/2026 | [Làm thế nào kiếm được một tỷ USD](issue-401.md) |
 | 400 | 12/06/2026 | [Tranh luận quanh rsync](issue-400.md) |
 
-Các số 400–414 được bổ sung ngày 19/10/2026 theo dạng ghi chú chủ đề và bình luận, ngắn hơn bản tổng hợp dài trong ChatGPT; các mục nhỏ được dẫn về bài nguồn để tiện đối chiếu. Số 415 có bản tổng hợp nhiều mục chi tiết hơn.
+**Trạng thái nội dung (19/10/2026):** Số **412, 413, 414** đã được mở rộng thành ghi chú đọc chi tiết với các bài đọc, công cụ và tài nguyên được liệt kê và diễn giải. Số **400–411** vẫn là bản tóm lược chủ đề, **chưa đáp ứng tiêu chuẩn chi tiết** và cần được biên soạn lại dựa trên từng bài gốc. Số **415** có bản tổng hợp chi tiết riêng. Không coi việc tệp tồn tại là bằng chứng đã hoàn thiện nội dung.
 
 [Nguồn tuần san](https://gitdoc.chuongtran.com/ruanyf/weekly) · [Bản gốc chính thức](https://www.ruanyifeng.com/blog/)
