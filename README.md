@@ -21,8 +21,22 @@ Chào mừng đóng góp bài viết/phần mềm/tài nguyên, vui lòng [gửi
 
 ## 2026
 
+**Tháng 10**
+
+- Số 416: [Lập trình đã hoàn toàn thay đổi diện mạo](docs/issue-416.md)
+- Số 415: [Phiên bản 3D của "Những thành phố vô hình"](docs/issue-415.md)
+- Số 414: [Mô hình quyết định Jev có tác dụng gì](docs/issue-414.md)
+
+**Tháng 9**
+
+- Số 413: [Tạm biệt React Native](docs/issue-413.md)
+- Số 412: [Cấm issue, chỉ nhận PR](docs/issue-412.md)
+- Số 411: [OpenClaw 2.0 là một bức tranh thu nhỏ](docs/issue-411.md)
+
 **Tháng 8**
 
+- Số 410: [Ba cơ chế AI bạn cần biết](docs/issue-410.md)
+- Số 409: [Tương lai nghề lập trình viên](docs/issue-409.md)
 - Số 408: [Những điều bạn cần biết về bộ nhớ đệm AI (AI Cache)](docs/issue-408.md)
 - Số 407: [Tại sao một quốc gia cần phần mềm mã nguồn mở?](docs/issue-407.md)
 
