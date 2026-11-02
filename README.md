@@ -5,7 +5,7 @@ Kho có hai mục nội dung khác nhau:
 - **[Tổng hợp chi tiết](tong-hop/README.md):** Ghi chú đọc, phân tích, công cụ, liên kết và bài học ứng dụng; mỗi số lưu tại `tong-hop/issue-NNN.md`.
 - **[Bản dịch](dich/README.md):** Bản dịch tiếng Việt; các bản dịch trước đây vẫn được giữ tại `docs/`, không thay đổi liên kết cũ.
 
-**Mới nhất:** [Tổng hợp số 416 – Lập trình đã thay đổi hoàn toàn diện mạo](tong-hop/issue-416.md), phát hành 23/10/2026. **Chỉ mục bản tổng hợp:** [xem tại đây](tong-hop/README.md). Các tệp 400–411 còn cần hoàn thiện về chiều sâu; không đồng nhất việc đã có tệp với việc đã biên soạn chi tiết.
+**Mới nhất:** [Tổng hợp số 417 – Đừng để AI đại diện cho bạn](tong-hop/issue-417.md), phát hành 30/10/2026. **Chỉ mục bản tổng hợp:** [xem tại đây](tong-hop/README.md). Các tệp 400–411 còn cần hoàn thiện về chiều sâu; không đồng nhất việc đã có tệp với việc đã biên soạn chi tiết.
 
 **Lịch xuất bản bản tổng hợp:** 8:00 thứ Hai hằng tuần, giờ Việt Nam, khi có số mới; không tạo commit trùng. Tệp Markdown dùng để lưu trữ, còn bản hiển thị trong ChatGPT được trình bày để dễ đọc.
 
