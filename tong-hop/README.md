@@ -6,6 +6,7 @@ Bản ghi chú đọc, diễn giải và bình luận từ tuần san công ngh�
 
 | Số | Ngày phát hành | Nội dung |
 | --- | --- | --- |
+| 419 | 13/11/2026 | [Phòng máy xuất hiện, cao ốc văn phòng lùi bước](issue-419.md) |
 | 418 | 06/11/2026 | [Nếu công nghệ dừng lại ở đầu thế kỷ XXI](issue-418.md) |
 | 417 | 30/10/2026 | [Đừng để AI đại diện cho bạn](issue-417.md) |
 | 416 | 23/10/2026 | [Lập trình đã thay đổi hoàn toàn diện mạo](issue-416.md) |
